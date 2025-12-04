@@ -64,14 +64,18 @@
 
 @layer utilities {
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-teal-500;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary via-teal-500 to-emerald-400;
   }
 
   .glow {
-    box-shadow: 0 0 40px hsl(160 84% 39% / 0.2);
+    box-shadow: 0 0 40px hsl(160 84% 39% / 0.15);
   }
 
   .glow-strong {
-    box-shadow: 0 0 60px hsl(160 84% 39% / 0.3);
+    box-shadow: 0 0 60px hsl(160 84% 39% / 0.25);
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-lg hover:shadow-primary/10 hover:-translate-y-1;
   }
 }
