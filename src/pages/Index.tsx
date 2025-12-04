@@ -4,6 +4,9 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
+import blazLogo from "@/assets/blaz-logo.png";
+import transphereLogo from "@/assets/transphere-logo.png";
+import hvacLogo from "@/assets/hvac-logo.png";
 
 const Index = () => {
   const { toast } = useToast();
@@ -150,7 +153,7 @@ const Index = () => {
           <div className="grid lg:grid-cols-3 gap-8">
             {[
               { 
-                icon: Headphones, 
+                logo: blazLogo, 
                 company: "Bläz Entertainment",
                 link: "https://www.blaz.us/",
                 tagline: "AI Tools + Mobile App (iOS & Android)",
@@ -158,7 +161,7 @@ const Index = () => {
                 highlights: ["Automated content and event-insight tools", "AI-assisted reservation + guest experience flow", "Mobile app launched on iOS & Android to drive participation"]
               },
               { 
-                icon: TrendingUp, 
+                logo: transphereLogo, 
                 company: "Transphere Inc.",
                 link: "https://www.transphereinc.com/",
                 tagline: "Freight Forwarding Operations Automation",
@@ -166,7 +169,7 @@ const Index = () => {
                 highlights: ["Faster shipment tracking visibility", "Instant customer notifications", "Smoother back-office workflow with fewer manual tasks"]
               },
               { 
-                icon: Clock, 
+                logo: hvacLogo, 
                 company: "Father & Son HVAC",
                 link: "https://share.google/l7j74yKRN8frkQw5r",
                 tagline: "AI Scheduling Assistant + Workflow Automation",
@@ -176,8 +179,8 @@ const Index = () => {
             ].map((item, i) => (
               <div key={i} className="group relative p-8 rounded-3xl bg-card border border-border hover:border-primary/30 transition-all duration-500 hover:shadow-xl hover:shadow-primary/5">
                 <div className="absolute top-0 left-8 right-8 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center mb-6">
-                  <item.icon className="w-7 h-7 text-primary" />
+                <div className="w-16 h-16 rounded-2xl overflow-hidden mb-6">
+                  <img src={item.logo} alt={`${item.company} logo`} className="w-full h-full object-cover" />
                 </div>
                 <a href={item.link} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
                   <h3 className="text-2xl font-bold mb-1">{item.company}</h3>
