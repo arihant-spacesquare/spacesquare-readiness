@@ -148,20 +148,20 @@ const Index = () => {
               { 
                 icon: Headphones, 
                 industry: "Nightlife Event Curation Company", 
-                desc: "Built AI tools for event insights, content automation, and engagement data to drive turnout and repeat attendance.",
-                results: ["Automated content creation", "Real-time engagement analytics", "Improved event targeting"]
+                desc: "Built an AI tool to streamline reservation booking and an app to increase event participation and attendance.",
+                results: ["Simplified reservation flow", "Higher event participation", "Better attendee engagement"]
               },
               { 
                 icon: TrendingUp, 
                 industry: "Freight Forwarding Company", 
-                desc: "Automated document handling, shipment tracking logic, and data extraction workflows to reduce manual steps.",
-                results: ["80% faster document processing", "Reduced turnaround time", "Lower operational overhead"]
+                desc: "Developed a web app with Gemini search to track customer lifecycle, send instant notifications, and streamline operations.",
+                results: ["Faster customer tracking", "Real-time notifications", "Smoother operations workflow"]
               },
               { 
                 icon: Clock, 
                 industry: "HVAC Services Company", 
-                desc: "Created a scheduling + ops assistant to streamline customer bookings, reminders, and technician routing.",
-                results: ["Automated scheduling", "Optimized routing", "Better customer communication"]
+                desc: "Using Gemini AI to help create and modify schedules seamlessly and distribute them to employees.",
+                results: ["Easy calendar management", "Quick schedule updates", "Streamlined team coordination"]
               },
             ].map((item, i) => (
               <div key={i} className="p-8 rounded-2xl bg-card border border-border hover:border-primary/50 transition-all duration-300">
@@ -276,7 +276,7 @@ const Index = () => {
             <div className="w-6 h-6 bg-primary rounded flex items-center justify-center">
               <span className="text-primary-foreground font-bold text-xs">S²</span>
             </div>
-            <span className="text-sm text-muted-foreground">© 2024 Space Square. All rights reserved.</span>
+            <span className="text-sm text-muted-foreground">© 2025 Space Square. All rights reserved.</span>
           </div>
           <a href="mailto:info@spacesquare.dev" className="text-sm text-muted-foreground hover:text-primary transition-colors">
             info@spacesquare.dev
