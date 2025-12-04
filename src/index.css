@@ -2,48 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap');
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 220 20% 10%;
+    --background: 45 30% 97%;
+    --foreground: 30 10% 12%;
 
-    --card: 220 20% 97%;
-    --card-foreground: 220 20% 10%;
+    --card: 45 25% 94%;
+    --card-foreground: 30 10% 12%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 220 20% 10%;
+    --popover: 45 30% 97%;
+    --popover-foreground: 30 10% 12%;
 
-    --primary: 160 84% 39%;
+    --primary: 15 80% 55%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 220 14% 94%;
-    --secondary-foreground: 220 20% 10%;
+    --secondary: 45 20% 90%;
+    --secondary-foreground: 30 10% 12%;
 
-    --muted: 220 14% 92%;
-    --muted-foreground: 220 10% 40%;
+    --muted: 45 15% 88%;
+    --muted-foreground: 30 8% 45%;
 
-    --accent: 160 84% 39%;
+    --accent: 15 80% 55%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 220 13% 88%;
-    --input: 220 13% 88%;
-    --ring: 160 84% 39%;
+    --border: 30 15% 85%;
+    --input: 30 15% 85%;
+    --ring: 15 80% 55%;
 
-    --radius: 0.75rem;
+    --radius: 0.5rem;
 
-    --sidebar-background: 220 20% 97%;
-    --sidebar-foreground: 220 20% 10%;
-    --sidebar-primary: 160 84% 39%;
+    --sidebar-background: 45 25% 94%;
+    --sidebar-foreground: 30 10% 12%;
+    --sidebar-primary: 15 80% 55%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 220 14% 94%;
-    --sidebar-accent-foreground: 220 20% 10%;
-    --sidebar-border: 220 13% 88%;
-    --sidebar-ring: 160 84% 39%;
+    --sidebar-accent: 45 20% 90%;
+    --sidebar-accent-foreground: 30 10% 12%;
+    --sidebar-border: 30 15% 85%;
+    --sidebar-ring: 15 80% 55%;
+
+    --font-serif: 'Instrument Serif', Georgia, serif;
+    --font-sans: 'DM Sans', system-ui, sans-serif;
   }
 }
 
@@ -57,25 +60,26 @@
   }
 
   body {
-    @apply bg-background text-foreground font-sans antialiased;
-    font-family: 'Inter', system-ui, sans-serif;
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-sans);
+  }
+
+  h1, h2, h3 {
+    font-family: var(--font-serif);
+    font-weight: 400;
   }
 }
 
 @layer utilities {
-  .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary via-teal-500 to-emerald-400;
+  .font-serif {
+    font-family: var(--font-serif);
   }
 
-  .glow {
-    box-shadow: 0 0 40px hsl(160 84% 39% / 0.15);
+  .font-sans {
+    font-family: var(--font-sans);
   }
 
-  .glow-strong {
-    box-shadow: 0 0 60px hsl(160 84% 39% / 0.25);
-  }
-
-  .card-hover {
-    @apply transition-all duration-300 hover:shadow-lg hover:shadow-primary/10 hover:-translate-y-1;
+  .link-underline {
+    @apply underline underline-offset-4 decoration-primary/40 hover:decoration-primary transition-colors;
   }
 }
