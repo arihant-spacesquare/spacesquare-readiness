@@ -152,6 +152,7 @@ const Index = () => {
               { 
                 icon: Headphones, 
                 company: "Bläz Entertainment",
+                link: "https://www.blaz.us/",
                 tagline: "AI Tools + Mobile App (iOS & Android)",
                 desc: "Built multiple AI-powered tools and a full mobile app to enhance event discovery, automate workflows, and boost attendee engagement for Detroit's premier nightlife brand.",
                 highlights: ["Automated content and event-insight tools", "AI-assisted reservation + guest experience flow", "Mobile app launched on iOS & Android to drive participation"]
@@ -159,6 +160,7 @@ const Index = () => {
               { 
                 icon: TrendingUp, 
                 company: "Transphere Inc.",
+                link: "https://www.transphereinc.com/",
                 tagline: "Freight Forwarding Operations Automation",
                 desc: "Developed a custom AI-powered web app to manage shipment lifecycle updates, automate customer notifications, and streamline day-to-day freight operations.",
                 highlights: ["Faster shipment tracking visibility", "Instant customer notifications", "Smoother back-office workflow with fewer manual tasks"]
@@ -166,6 +168,7 @@ const Index = () => {
               { 
                 icon: Clock, 
                 company: "Father & Son HVAC",
+                link: "https://share.google/l7j74yKRN8frkQw5r",
                 tagline: "AI Scheduling Assistant + Workflow Automation",
                 desc: "Created an AI-powered assistant to simplify appointment scheduling, reminders, and technician operations for a local HVAC business.",
                 highlights: ["Easy calendar + appointment management", "Real-time schedule updates & messaging", "Streamlined technician coordination"]
@@ -176,7 +179,9 @@ const Index = () => {
                 <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center mb-6">
                   <item.icon className="w-7 h-7 text-primary" />
                 </div>
-                <h3 className="text-2xl font-bold mb-1">{item.company}</h3>
+                <a href={item.link} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+                  <h3 className="text-2xl font-bold mb-1">{item.company}</h3>
+                </a>
                 <p className="text-primary font-medium text-sm mb-4">{item.tagline}</p>
                 <p className="text-muted-foreground mb-6 leading-relaxed">{item.desc}</p>
                 <div className="space-y-3 pt-4 border-t border-border">
@@ -194,36 +199,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Why Space Square */}
-      <section className="py-32 px-6 bg-gradient-to-b from-card/50 to-background">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">Why Us</span>
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">Why Space Square</h2>
-            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              We're not another AI consultancy. We build things that pay for themselves.
-            </p>
-          </div>
-          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-            {[
-              { title: "ROI-first", desc: "We tie every build to real business outcomes. If it doesn't move the needle, we don't build it." },
-              { title: "We ship, not theorize", desc: "Fast prototypes that turn into real tools. No 100-page strategy decks gathering dust." },
-              { title: "Tech + business fluency", desc: "We translate pain points into workable solutions. No lost-in-translation moments." },
-              { title: "Flexible & stack-agnostic", desc: "We integrate with the systems you already use. No rip-and-replace required." },
-            ].map((item, i) => (
-              <div key={i} className="flex gap-4 p-6 rounded-2xl bg-card border border-border hover:border-primary/30 transition-all duration-300">
-                <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-teal-500 flex items-center justify-center flex-shrink-0">
-                  <CheckCircle2 className="w-5 h-5 text-white" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-bold mb-1">{item.title}</h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed">{item.desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Contact */}
       <section id="contact" className="py-32 px-6 relative overflow-hidden">
