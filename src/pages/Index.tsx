@@ -109,8 +109,8 @@ const Index = () => {
         </div>
       </section>
 
-      {/* How We Work */}
-      <section id="process" className="py-32 px-6 bg-card/50">
+      {/* How We Work - Hidden on mobile */}
+      <section id="process" className="hidden md:block py-32 px-6 bg-card/50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">How We Work</h2>
