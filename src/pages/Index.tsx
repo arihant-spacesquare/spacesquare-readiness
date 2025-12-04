@@ -75,8 +75,8 @@ const Index = () => {
             <Button onClick={() => scrollToSection("contact")} size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 glow px-8 h-12 text-base">
               Work with us <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
-            <Button onClick={() => scrollToSection("services")} variant="outline" size="lg" className="border-border hover:bg-secondary h-12 text-base">
-              What we do
+            <Button onClick={() => scrollToSection("customers")} variant="outline" size="lg" className="border-border hover:bg-secondary h-12 text-base">
+              Our customers
             </Button>
           </div>
         </div>
