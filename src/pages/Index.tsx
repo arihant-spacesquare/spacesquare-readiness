@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ArrowRight, Zap, BarChart3, Cpu, Users, Target, Rocket, CheckCircle2, Mail, Building2, MessageSquare, Headphones, TrendingUp, Clock, Cog } from "lucide-react";
+import { ArrowRight, Zap, Cpu, Target, Rocket, CheckCircle2, Mail, Building2, MessageSquare, Headphones, TrendingUp, Clock, Cog } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -10,7 +10,6 @@ const Index = () => {
   const [formData, setFormData] = useState({
     name: "",
     company: "",
-    email: "",
     message: "",
   });
 
@@ -36,7 +35,7 @@ const Index = () => {
         <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-sm">SS</span>
+              <span className="text-primary-foreground font-bold text-sm">S²</span>
             </div>
             <span className="font-semibold text-lg">Space Square</span>
           </div>
@@ -86,13 +85,11 @@ const Index = () => {
               Outcome-focused services built to drive revenue, cut costs, and save time.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-3 gap-6">
             {[
               { icon: Target, title: "AI Strategy & Roadmapping", desc: "Identify high-impact AI opportunities and build a practical path to implementation." },
               { icon: Cog, title: "Process Automation & Agents", desc: "Automate repetitive workflows with intelligent agents that handle tasks 24/7." },
-              { icon: BarChart3, title: "Data & Analytics Dashboards", desc: "Turn your data into actionable insights with real-time dashboards and reporting." },
               { icon: Cpu, title: "Custom AI Tools & Apps", desc: "Build internal tools and applications tailored to your specific business needs." },
-              { icon: Users, title: "AI Training & Enablement", desc: "Upskill your team to leverage AI effectively across departments." },
             ].map((service, i) => (
               <div key={i} className="group p-8 rounded-2xl bg-card border border-border hover:border-primary/50 transition-all duration-300 hover:glow">
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
@@ -150,19 +147,19 @@ const Index = () => {
             {[
               { 
                 icon: Headphones, 
-                industry: "Nightlife Event Curation", 
+                industry: "Nightlife Event Curation Company", 
                 desc: "Built AI tools for event insights, content automation, and engagement data to drive turnout and repeat attendance.",
                 results: ["Automated content creation", "Real-time engagement analytics", "Improved event targeting"]
               },
               { 
                 icon: TrendingUp, 
-                industry: "Freight Forwarding", 
+                industry: "Freight Forwarding Company", 
                 desc: "Automated document handling, shipment tracking logic, and data extraction workflows to reduce manual steps.",
                 results: ["80% faster document processing", "Reduced turnaround time", "Lower operational overhead"]
               },
               { 
                 icon: Clock, 
-                industry: "HVAC Services", 
+                industry: "HVAC Services Company", 
                 desc: "Created a scheduling + ops assistant to streamline customer bookings, reminders, and technician routing.",
                 results: ["Automated scheduling", "Optimized routing", "Better customer communication"]
               },
@@ -254,17 +251,6 @@ const Index = () => {
               </div>
             </div>
             <div>
-              <label className="block text-sm font-medium mb-2">Email</label>
-              <Input
-                type="email"
-                required
-                value={formData.email}
-                onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                className="bg-card border-border focus:border-primary"
-                placeholder="you@company.com"
-              />
-            </div>
-            <div>
               <label className="block text-sm font-medium mb-2">What do you want to improve?</label>
               <Textarea
                 required
@@ -288,7 +274,7 @@ const Index = () => {
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2">
             <div className="w-6 h-6 bg-primary rounded flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-xs">SS</span>
+              <span className="text-primary-foreground font-bold text-xs">S²</span>
             </div>
             <span className="text-sm text-muted-foreground">© 2024 Space Square. All rights reserved.</span>
           </div>
