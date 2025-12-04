@@ -36,12 +36,12 @@ const Index = () => {
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border">
         <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-2">
+          <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="flex items-center gap-2 hover:opacity-80 transition-opacity">
             <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
               <span className="text-primary-foreground font-bold text-sm">S²</span>
             </div>
             <span className="font-semibold text-lg">Space Square</span>
-          </div>
+          </button>
           <div className="hidden md:flex items-center gap-8">
             <button onClick={() => scrollToSection("services")} className="text-muted-foreground hover:text-foreground transition-colors text-sm">Services</button>
             <button onClick={() => scrollToSection("process")} className="text-muted-foreground hover:text-foreground transition-colors text-sm">Process</button>
@@ -94,7 +94,7 @@ const Index = () => {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               { icon: Target, title: "AI Strategy & Roadmapping", desc: "Identify high-impact AI opportunities and build a practical path to implementation." },
-              { icon: Cog, title: "Process Automation & Agents", desc: "Automate repetitive workflows with intelligent agents that handle tasks 24/7." },
+              { icon: Cog, title: "Intelligent Workflows & AI Agents", desc: "Enhance operations with AI systems that automate tasks, surface insights, personalize experiences, and make smarter decisions in real time." },
               { icon: Cpu, title: "Custom AI Tools & Apps", desc: "Build internal tools and applications tailored to your specific business needs." },
             ].map((service, i) => (
               <div key={i} className="group p-8 rounded-3xl bg-gradient-to-b from-card to-background border border-border hover:border-primary/30 transition-all duration-500 hover:shadow-xl hover:shadow-primary/5 hover:-translate-y-1">
@@ -182,8 +182,9 @@ const Index = () => {
                 <div className="w-16 h-16 rounded-2xl overflow-hidden mb-6">
                   <img src={item.logo} alt={`${item.company} logo`} className="w-full h-full object-cover" />
                 </div>
-                <a href={item.link} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
-                  <h3 className="text-2xl font-bold mb-1">{item.company}</h3>
+                <a href={item.link} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors group/link">
+                  <h3 className="text-2xl font-bold mb-1 underline underline-offset-4 decoration-primary/50 group-hover/link:decoration-primary">{item.company}</h3>
+                  <ArrowRight className="w-5 h-5 -rotate-45 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform" />
                 </a>
                 <p className="text-primary font-medium text-sm mb-4">{item.tagline}</p>
                 <p className="text-muted-foreground mb-6 leading-relaxed">{item.desc}</p>
