@@ -157,7 +157,7 @@ const Index = () => {
                 company: "Bläz Entertainment",
                 link: "https://www.blaz.us/",
                 tagline: "AI Tools + Mobile App (iOS & Android)",
-                desc: "Built multiple AI-powered tools and a full mobile app to enhance event discovery, automate workflows, and boost attendee engagement for Detroit's premier nightlife brand.",
+                desc: "Built multiple AI-powered tools and a full-service mobile app to enhance event discovery, automate workflows, and boost attendee engagement for Detroit's premier nightlife brand.",
                 highlights: ["Automated content and event-insight tools", "AI-assisted reservation + guest experience flow", "Mobile app launched on iOS & Android to drive participation"]
               },
               { 
