@@ -1,22 +1,25 @@
 # Space Square
 
-> AI consulting and custom software studio. We build AI solutions focused on real outcomes and measurable ROI — AI strategy, intelligent workflows and agents, and custom AI tools and apps.
+> AI consulting and custom software studio building outcome-focused AI tools that deliver real ROI — no hype, no fluff.
 
-Contact: info@spacesquare.dev
-Website: https://spacesquare.dev
+Space Square partners with businesses to identify high-impact AI opportunities, automate workflows with intelligent agents, and ship custom AI tools and applications. Engagements are fast, practical, and measured against clear success metrics.
 
 ## Services
-- [AI Strategy & Roadmapping](https://spacesquare.dev/services/ai-strategy): Identify high-impact AI opportunities and build a practical path to implementation.
-- [Intelligent Workflows & AI Agents](https://spacesquare.dev/services/intelligent-workflows): Automate tasks, surface insights, and make smarter decisions in real time.
-- [Custom AI Tools & Apps](https://spacesquare.dev/services/custom-ai-apps): Internal tools and applications tailored to specific business needs.
 
-## Case studies
-- [Bläz Entertainment](https://spacesquare.dev/work/blaz-entertainment): AI tools plus an iOS/Android app for event discovery, reservations, and engagement.
-- [Transphere Inc.](https://spacesquare.dev/work/transphere): Custom AI web app automating freight shipment lifecycle updates and customer notifications.
-- [Father & Son HVAC](https://spacesquare.dev/work/father-and-son-hvac): AI scheduling assistant handling appointments, reminders, and technician coordination.
+- [AI Strategy & Roadmapping](/#services): Identify high-impact AI opportunities and build a practical implementation path.
+- [Intelligent Workflows & AI Agents](/#services): AI systems that automate tasks, surface insights, personalize experiences, and make smarter real-time decisions.
+- [Custom AI Tools & Apps](/#services): Internal tools and applications tailored to specific business needs.
 
-## Process
-- [How we work](https://spacesquare.dev/process): Listen & diagnose, design & validate, build & integrate, measure & improve.
+## How We Work
+
+- [Process](/#process): Four-step engagement — Listen & Diagnose, Design & Validate, Build & Integrate, Measure & Improve.
+
+## Customer Use Cases
+
+- [Bläz Entertainment](https://www.blaz.us/): AI tools and a full-service iOS/Android mobile app for Detroit nightlife event discovery and engagement.
+- [Transphere Inc.](https://www.transphereinc.com/): AI-powered freight forwarding web app for shipment lifecycle updates and customer notifications.
+- [Father & Son HVAC](https://share.google/l7j74yKRN8frkQw5r): AI scheduling assistant and workflow automation for appointment management.
 
 ## Contact
-- [Contact](https://spacesquare.dev/contact): Enquiries answered within 24 hours.
+
+- [Get in touch](/#contact): info@spacesquare.dev
