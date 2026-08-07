@@ -56,7 +56,7 @@ const ServiceDetail = () => {
             ))}
           </ul>
 
-          <div className="rounded-3xl border border-primary/25 p-8" style={{ backgroundImage: "var(--gradient-deep)" }}>
+          <div className="rounded-3xl border border-border bg-card p-8">
             <h2 className="text-2xl font-bold mb-3">Think this fits?</h2>
             <p className="text-muted-foreground mb-6">Send us a short description of the problem. We'll tell you honestly whether it's worth doing.</p>
             <Button asChild className="glow">

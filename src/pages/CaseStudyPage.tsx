@@ -77,7 +77,7 @@ const CaseStudyPage = () => {
             </div>
           </div>
 
-          <div className="rounded-3xl border border-primary/25 p-8" style={{ backgroundImage: "var(--gradient-deep)" }}>
+          <div className="rounded-3xl border border-border bg-card p-8">
             <h2 className="text-2xl font-bold mb-3">Got a similar problem?</h2>
             <p className="text-muted-foreground mb-6">We scope fast and tell you upfront whether it's worth building.</p>
             <Button asChild className="glow">
