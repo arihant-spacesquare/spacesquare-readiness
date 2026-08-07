@@ -16,27 +16,28 @@ const Index = () => (
     />
 
     {/* Hero */}
-    <section className="relative overflow-hidden px-6 pt-20 pb-24">
-      <div className="absolute inset-0 grid-lines pointer-events-none" aria-hidden="true" />
-      <div className="absolute -top-20 left-1/2 -translate-x-1/2 w-[42rem] h-[42rem] rounded-full blur-3xl pointer-events-none" style={{ background: "var(--gradient-deep)" }} aria-hidden="true" />
-      <div className="max-w-6xl mx-auto relative">
-        <div className="max-w-3xl animate-fade-up">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-primary/30 bg-primary/10 mb-8">
-            <Zap className="w-3.5 h-3.5 text-primary" />
-            <span className="text-xs font-medium tracking-wide uppercase">AI Consulting + Custom Software</span>
+    <section className="relative overflow-hidden px-6 pt-24 pb-28">
+      <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-transparent pointer-events-none" aria-hidden="true" />
+      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl pointer-events-none" aria-hidden="true" />
+      <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-teal-500/10 rounded-full blur-3xl pointer-events-none" aria-hidden="true" />
+      <div className="max-w-4xl mx-auto relative z-10 text-center">
+        <div className="animate-fade-up">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/20 bg-primary/10 mb-8">
+            <Zap className="w-4 h-4 text-primary" />
+            <span className="text-sm font-medium text-foreground">AI Consulting + Custom Software</span>
           </div>
-          <h1 className="text-5xl md:text-7xl font-bold leading-[1.02] mb-6">
+          <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6">
             AI that actually moves <span className="text-gradient">the numbers.</span>
           </h1>
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-10 leading-relaxed">
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed">
             We build AI solutions focused on real outcomes and ROI. No hype, no fluff — just tools that work and results you can measure.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button asChild size="lg" className="glow h-12 px-8 text-base">
               <Link to="/contact">Work with us <ArrowRight className="ml-2 w-5 h-5" /></Link>
             </Button>
             <Button asChild variant="outline" size="lg" className="h-12 text-base">
-              <Link to="/work">See our work</Link>
+              <Link to="/work">Our customers</Link>
             </Button>
           </div>
         </div>
