@@ -54,20 +54,19 @@ const Index = () => (
           </Link>
         </div>
 
-        <div className="grid gap-5 md:grid-cols-6 auto-rows-[minmax(0,auto)]">
+        <div className="grid md:grid-cols-3 gap-8">
           {services.map((s, i) => {
             const Icon = icons[i];
-            const span = i === 0 ? "md:col-span-4" : i === 1 ? "md:col-span-2" : "md:col-span-3";
             return (
               <Link
                 key={s.slug}
                 to={`/services/${s.slug}`}
-                className={`${span} group rounded-3xl surface border border-border p-8 card-hover`}
+                className="group p-8 rounded-3xl surface border border-border card-hover"
               >
-                <div className="w-12 h-12 rounded-2xl bg-primary/10 border border-primary/20 flex items-center justify-center mb-6">
-                  <Icon className="w-6 h-6 text-primary" />
+                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center mb-6 group-hover:from-primary/30 group-hover:to-primary/10 transition-all duration-300">
+                  <Icon className="w-7 h-7 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-2">{s.title}</h3>
+                <h3 className="text-xl font-bold mb-3">{s.title}</h3>
                 <p className="text-muted-foreground leading-relaxed">{s.short}</p>
                 <span className="mt-5 inline-flex items-center gap-1 text-sm text-primary opacity-0 group-hover:opacity-100 transition-opacity">
                   Learn more <ArrowRight className="w-4 h-4" />
@@ -75,22 +74,23 @@ const Index = () => (
               </Link>
             );
           })}
+        </div>
 
-          <div className="md:col-span-3 rounded-3xl border border-primary/25 p-8 flex flex-col justify-between" style={{ backgroundImage: "var(--gradient-deep)" }}>
-            <div>
-              <p className="text-xs font-semibold uppercase tracking-wider text-primary mb-4">How we work</p>
-              <ul className="space-y-3">
-                {processSteps.map((p) => (
-                  <li key={p.step} className="flex items-start gap-3 text-sm">
-                    <span className="font-display text-primary/70 font-bold">{p.step}</span>
-                    <span className="text-foreground/85">{p.title} — <span className="text-muted-foreground">{p.desc}</span></span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <Link to="/process" className="mt-6 inline-flex items-center gap-1 text-sm text-primary hover:underline">
+        <div className="mt-16 rounded-3xl bg-card border border-border p-8 md:p-10">
+          <div className="flex flex-wrap items-end justify-between gap-4 mb-8">
+            <h3 className="text-2xl font-bold">How we work</h3>
+            <Link to="/process" className="text-sm text-primary hover:underline inline-flex items-center gap-1">
               Our process <ArrowRight className="w-4 h-4" />
             </Link>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {processSteps.map((p) => (
+              <div key={p.step}>
+                <div className="text-5xl font-bold text-primary/20 mb-3">{p.step}</div>
+                <h4 className="text-lg font-semibold mb-2">{p.title}</h4>
+                <p className="text-muted-foreground text-sm">{p.desc}</p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
