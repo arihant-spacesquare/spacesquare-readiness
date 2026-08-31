@@ -156,7 +156,7 @@ const Index = () => {
               { 
                 logo: blazLogo, 
                 company: "Bläz Entertainment",
-                link: "https://www.blaz.us/",
+                link: "https://apps.apple.com/us/app/blaz/id6754829750",
                 tagline: "AI Tools + Mobile App (iOS & Android)",
                 desc: "Built multiple AI-powered tools and a full-service mobile app to enhance event discovery, automate workflows, and boost attendee engagement for Detroit's premier nightlife brand.",
                 highlights: ["Automated content and event-insight tools", "AI-assisted reservation + guest experience flow", "Mobile app launched on iOS & Android to drive participation"]
@@ -164,7 +164,7 @@ const Index = () => {
               { 
                 logo: transphereLogo, 
                 company: "Transphere Inc.",
-                link: "https://www.transphereinc.com/",
+                link: "https://www.transphereinc.co/",
                 tagline: "Freight Forwarding Operations Automation",
                 desc: "Developed a custom AI-powered web app to manage shipment lifecycle updates, automate customer notifications, and streamline day-to-day freight operations.",
                 highlights: ["Faster shipment tracking visibility", "Instant customer notifications", "Smoother back-office workflow with fewer manual tasks"]
