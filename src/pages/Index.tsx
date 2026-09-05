@@ -175,11 +175,11 @@ const Index = () => {
                 company: "MI Therapy Clinic",
                 link: "https://mitherapyclinic.com/",
                tagline: "Cloud Digital Experience + AI Marketing Automation",
-desc: "Modernized the clinic’s digital presence with a Google Cloud-powered patient experience designed to drive discovery, simplify common patient interactions, and automate ongoing content and marketing workflows.",
+desc: "Built a Google Cloud-powered digital front door that helps the clinic attract patients, answer common questions, and automate ongoing marketing.",
 highlights: [
-  "Created a self-service digital experience for services, insurance, forms, billing, FAQs, and patient inquiries",
-  "Implemented AI-assisted blog and social content workflows to support continuous outreach",
-  "Improved discoverability across traditional search, local search, and generative AI experiences"
+  "Enabled self-service across services, insurance, forms, billing, FAQs, and inquiries",
+  "Automated blog and social content creation with AI",
+  "Optimized for SEO, local search, and generative AI discovery"
 ]
               },
               { 
