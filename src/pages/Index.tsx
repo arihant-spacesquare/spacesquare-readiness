@@ -174,9 +174,13 @@ const Index = () => {
                 logo: miTherapyLogo, 
                 company: "MI Therapy Clinic",
                 link: "https://mitherapyclinic.com/",
-                tagline: "Google Cloud Website + AI Growth Automation",
-                desc: "Built a modern, self-service website for a local physical therapy clinic using Google Cloud, while adding AI-powered content workflows to improve patient engagement, local search visibility, and ongoing marketing.",
-                highlights: ["Built and deployed a modern website on Google Cloud", "Built AI-assisted blog and social media content workflows", "Optimized website content for SEO, local search, and Generative Engine Optimization (GEO)"]
+               tagline: "Cloud Digital Experience + AI Marketing Automation",
+desc: "Modernized the clinic’s digital presence with a Google Cloud-powered patient experience designed to drive discovery, simplify common patient interactions, and automate ongoing content and marketing workflows.",
+highlights: [
+  "Created a self-service digital experience for services, insurance, forms, billing, FAQs, and patient inquiries",
+  "Implemented AI-assisted blog and social content workflows to support continuous outreach",
+  "Improved discoverability across traditional search, local search, and generative AI experiences"
+]
               },
               { 
                 logo: hvacLogo,
