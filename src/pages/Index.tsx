@@ -8,7 +8,6 @@ import blazLogo from "@/assets/blaz-logo.png";
 import transphereLogo from "@/assets/transphere-logo.png";
 import miTherapyLogo from "@/assets/mi-therapy-logo.png";
 import hvacLogo from "@/assets/hvac-logo.png";
-import googleCloudPartnerLogo from "@/assets/google-cloud-partner.png.asset.json";
 
 const Index = () => {
   const { toast } = useToast();
@@ -50,23 +49,9 @@ const Index = () => {
             <button onClick={() => scrollToSection("cases")} className="text-muted-foreground hover:text-foreground transition-colors text-sm">Use Cases</button>
             <button onClick={() => scrollToSection("contact")} className="text-muted-foreground hover:text-foreground transition-colors text-sm">Contact</button>
           </div>
-          <div className="flex items-center gap-4">
-            <a
-              href="https://cloud.google.com/partners/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hidden sm:block h-8 rounded-md bg-white border border-border/60 px-2 py-1 hover:border-primary/40 transition-colors"
-            >
-              <img
-                src={googleCloudPartnerLogo.url}
-                alt="Google Cloud Partner"
-                className="h-full w-auto object-contain"
-              />
-            </a>
-            <Button onClick={() => scrollToSection("contact")} size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90">
-              Work with us
-            </Button>
-          </div>
+          <Button onClick={() => scrollToSection("contact")} size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90">
+            Work with us
+          </Button>
         </div>
       </nav>
 
