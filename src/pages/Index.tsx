@@ -38,35 +38,35 @@ const Index = () => {
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border">
         <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-          <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="flex items-center gap-2 hover:opacity-80 transition-opacity">
-            <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-sm">S²</span>
-            </div>
-            <span className="font-semibold text-lg">Space Square</span>
-          </button>
+          <div className="flex items-center gap-3">
+            <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="flex items-center gap-3 hover:opacity-80 transition-opacity">
+              <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
+                <span className="text-primary-foreground font-bold text-sm">S²</span>
+              </div>
+              <span className="font-semibold text-lg">Space Square</span>
+            </button>
+            <a
+              href="https://cloud.google.com/partners/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden sm:flex h-9 items-center rounded-lg bg-white border border-border/70 px-2.5 hover:border-primary/40 transition-colors"
+            >
+              <img
+                src={googleCloudPartnerLogo.url}
+                alt="Google Cloud Partner"
+                className="h-5 w-auto object-contain"
+              />
+            </a>
+          </div>
           <div className="hidden md:flex items-center gap-8">
             <button onClick={() => scrollToSection("services")} className="text-muted-foreground hover:text-foreground transition-colors text-sm">Services</button>
             <button onClick={() => scrollToSection("process")} className="text-muted-foreground hover:text-foreground transition-colors text-sm">Process</button>
             <button onClick={() => scrollToSection("cases")} className="text-muted-foreground hover:text-foreground transition-colors text-sm">Use Cases</button>
             <button onClick={() => scrollToSection("contact")} className="text-muted-foreground hover:text-foreground transition-colors text-sm">Contact</button>
           </div>
-          <div className="flex items-center gap-4">
-            <a
-              href="https://cloud.google.com/partners/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hidden sm:block h-8 rounded-md bg-white border border-border/60 px-2 py-1 hover:border-primary/40 transition-colors"
-            >
-              <img
-                src={googleCloudPartnerLogo.url}
-                alt="Google Cloud Partner"
-                className="h-full w-auto object-contain"
-              />
-            </a>
-            <Button onClick={() => scrollToSection("contact")} size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90">
-              Work with us
-            </Button>
-          </div>
+          <Button onClick={() => scrollToSection("contact")} size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90">
+            Work with us
+          </Button>
         </div>
       </nav>
 
