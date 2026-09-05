@@ -151,7 +151,7 @@ const Index = () => {
               Here's how Space Square is helping businesses automate, grow, and operate smarter.
             </p>
           </div>
-          <div className="grid lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8">
             {[
               { 
                 logo: blazLogo, 
