@@ -59,37 +59,34 @@ const Index = () => {
       <main>
       {/* Hero Section */}
       <section className="min-h-screen flex items-center justify-center pt-20 px-6 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-transparent pointer-events-none" />
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl pointer-events-none" />
-        <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-teal-500/10 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-b from-primary/[0.07] via-transparent to-transparent pointer-events-none" />
+        <div className="absolute top-1/4 left-1/4 w-[28rem] h-[28rem] bg-primary/10 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-teal-500/10 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute inset-0 pointer-events-none opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(hsl(160 84% 39%) 1px, transparent 1px)', backgroundSize: '32px 32px' }} />
         <div className="max-w-4xl mx-auto text-center relative z-10">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-8">
-            <Zap className="w-4 h-4 text-primary" />
-            <span className="text-sm font-medium text-foreground">AI Consulting + Custom Software</span>
-          </div>
-          <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight mb-8 leading-[1.1]">
             AI that actually moves{" "}
             <span className="text-gradient">the numbers.</span>
           </h1>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed">
+          <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto mb-12 leading-relaxed">
             We build AI solutions focused on real outcomes and ROI. No hype, no fluff — just tools that work and results you can measure.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button onClick={() => scrollToSection("contact")} size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 glow px-8 h-12 text-base">
+            <Button onClick={() => scrollToSection("contact")} size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 glow px-8 h-14 text-base rounded-full">
               Work with us <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
-            <Button onClick={() => scrollToSection("cases")} variant="outline" size="lg" className="border-border hover:bg-secondary h-12 text-base">
+            <Button onClick={() => scrollToSection("cases")} variant="outline" size="lg" className="border-border hover:bg-secondary h-14 text-base rounded-full px-8">
               Our customers
             </Button>
           </div>
-          <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-3 text-sm text-muted-foreground">
-            <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-card border border-border">
+          <a href="https://cloud.google.com/find-a-partner/partner/space-square-llc" target="_blank" rel="noopener noreferrer" className="mt-14 inline-flex flex-col sm:flex-row items-center justify-center gap-3 text-sm text-muted-foreground group">
+            <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-card border border-border group-hover:border-primary/30 group-hover:bg-primary/[0.03] transition-colors">
               <img src={googleCloudLogo} alt="Google Cloud" className="w-5 h-5 object-contain" />
-              <span className="font-medium">Google Cloud Partner</span>
+              <span className="font-medium text-foreground">Google Cloud Partner</span>
             </div>
-            <span className="hidden sm:inline">·</span>
-            <span>Built on infrastructure that scales.</span>
-          </div>
+            <span className="hidden sm:inline text-primary/50">·</span>
+            <span className="group-hover:text-foreground transition-colors">Built on infrastructure that scales.</span>
+          </a>
         </div>
       </section>
 
@@ -168,7 +165,7 @@ const Index = () => {
                 company: "Bläz Entertainment",
                 link: "https://apps.apple.com/us/app/blaz/id6754829750",
                 tagline: "AI Tools + Mobile App (iOS & Android)",
-                desc: "Built multiple AI-powered tools and a full-service mobile app to enhance event discovery, automate workflows, and boost attendee engagement for Detroit's premier nightlife brand.",
+                desc: "Built multiple AI-powered tools and a full-service mobile app to enhance event discovery, automate workflows, and drive attendee engagement for Detroit's premier nightlife brand.",
                 highlights: ["Automated content and event-insight tools", "AI-assisted reservation + guest experience flow", "Mobile app launched on iOS & Android to drive engagement"]
               },
               { 
