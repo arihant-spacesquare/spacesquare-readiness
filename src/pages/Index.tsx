@@ -60,33 +60,35 @@ const Index = () => {
       {/* Hero Section */}
       <section className="min-h-screen flex items-center justify-center pt-20 px-6 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-primary/[0.07] via-transparent to-transparent pointer-events-none" />
-        <div className="absolute top-1/4 left-1/4 w-[28rem] h-[28rem] bg-primary/10 rounded-full blur-3xl pointer-events-none" />
-        <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-teal-500/10 rounded-full blur-3xl pointer-events-none" />
-        <div className="absolute inset-0 pointer-events-none opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(hsl(160 84% 39%) 1px, transparent 1px)', backgroundSize: '32px 32px' }} />
-        <div className="max-w-4xl mx-auto text-center relative z-10">
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight mb-8 leading-[1.1]">
-            AI that actually moves{" "}
-            <span className="text-gradient">the numbers.</span>
+        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[32rem] h-[32rem] bg-primary/10 rounded-full blur-3xl pointer-events-none" />
+        <div className="max-w-3xl mx-auto text-center relative z-10">
+          <a href="https://cloud.google.com/find-a-partner/partner/space-square-llc" target="_blank" rel="noopener noreferrer" className="mb-8 inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-card/60 border border-border hover:border-primary/30 transition-colors group">
+            <img src={googleCloudLogo} alt="Google Cloud" className="w-4 h-4 object-contain" />
+            <span className="text-xs font-medium text-muted-foreground tracking-wide uppercase group-hover:text-foreground transition-colors">Google Cloud Partner</span>
+          </a>
+          <h1 className="font-heading text-5xl md:text-7xl font-bold text-foreground leading-[1.05] tracking-tight mb-6">
+            AI that actually <br />
+            <span className="text-gradient">moves the numbers.</span>
           </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto mb-12 leading-relaxed">
+          <p className="text-lg md:text-xl text-muted-foreground max-w-xl mx-auto mb-10 leading-relaxed">
             We build AI solutions focused on real outcomes and ROI. No hype, no fluff — just tools that work and results you can measure.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button onClick={() => scrollToSection("contact")} size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 glow px-8 h-14 text-base rounded-full">
+            <Button onClick={() => scrollToSection("contact")} size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 h-14 text-base rounded-xl shadow-lg shadow-primary/20">
               Work with us <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
-            <Button onClick={() => scrollToSection("cases")} variant="outline" size="lg" className="border-border hover:bg-secondary h-14 text-base rounded-full px-8">
+            <Button onClick={() => scrollToSection("cases")} variant="outline" size="lg" className="border-2 border-border hover:border-primary hover:text-primary h-14 text-base rounded-xl px-8 bg-card">
               Our customers
             </Button>
           </div>
-          <a href="https://cloud.google.com/find-a-partner/partner/space-square-llc" target="_blank" rel="noopener noreferrer" className="mt-14 inline-flex flex-col sm:flex-row items-center justify-center gap-3 text-sm text-muted-foreground group">
-            <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-card border border-border group-hover:border-primary/30 group-hover:bg-primary/[0.03] transition-colors">
-              <img src={googleCloudLogo} alt="Google Cloud" className="w-5 h-5 object-contain" />
-              <span className="font-medium text-foreground">Google Cloud Partner</span>
+          <div className="mt-16 relative flex items-center justify-center opacity-20">
+            <div className="absolute -inset-8 bg-primary/5 blur-3xl rounded-full" />
+            <div className="relative flex items-center gap-2">
+              <div className="w-2 h-2 rounded-full bg-primary" />
+              <div className="w-24 h-px bg-primary" />
+              <div className="w-2 h-2 rounded-full border border-primary" />
             </div>
-            <span className="hidden sm:inline text-primary/50">·</span>
-            <span className="group-hover:text-foreground transition-colors">Built on infrastructure that scales.</span>
-          </a>
+          </div>
         </div>
       </section>
 
