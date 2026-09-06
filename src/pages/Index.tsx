@@ -8,6 +8,7 @@ import blazLogo from "@/assets/blaz-logo.png";
 import transphereLogo from "@/assets/transphere-logo.png";
 import miTherapyLogo from "@/assets/mi-therapy-logo.png";
 import hvacLogo from "@/assets/hvac-logo.png";
+import googleCloudLogo from "@/assets/google-cloud-logo.png";
 
 const Index = () => {
   const { toast } = useToast();
