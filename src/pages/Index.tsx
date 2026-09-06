@@ -63,10 +63,6 @@ const Index = () => {
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-teal-500/10 rounded-full blur-3xl pointer-events-none" />
         <div className="max-w-4xl mx-auto text-center relative z-10">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-8">
-            <Zap className="w-4 h-4 text-primary" />
-            <span className="text-sm font-medium text-foreground">AI Consulting + Custom Software</span>
-          </div>
           <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6">
             AI that actually moves{" "}
             <span className="text-gradient">the numbers.</span>
