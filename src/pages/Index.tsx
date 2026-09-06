@@ -8,6 +8,7 @@ import blazLogo from "@/assets/blaz-logo.png";
 import transphereLogo from "@/assets/transphere-logo.png";
 import miTherapyLogo from "@/assets/mi-therapy-logo.png";
 import hvacLogo from "@/assets/hvac-logo.png";
+import googleCloudLogo from "@/assets/google-cloud-logo.png";
 
 const Index = () => {
   const { toast } = useToast();
@@ -80,6 +81,14 @@ const Index = () => {
             <Button onClick={() => scrollToSection("cases")} variant="outline" size="lg" className="border-border hover:bg-secondary h-12 text-base">
               Our customers
             </Button>
+          </div>
+          <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-3 text-sm text-muted-foreground">
+            <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-card border border-border">
+              <img src={googleCloudLogo} alt="Google Cloud" className="w-5 h-5 object-contain" />
+              <span className="font-medium">Google Cloud Partner</span>
+            </div>
+            <span className="hidden sm:inline">·</span>
+            <span>Built on infrastructure that scales.</span>
           </div>
         </div>
       </section>
